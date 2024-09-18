@@ -69,7 +69,7 @@ If your current user has different IDs, and you want to generate files directly 
 
 ```console
 $ mkdir data # or chown -R $(id -u):$(id -g) data
-$ docker run -it --rm -v $PWD/data:/out --user $(id -u):$(id -g) tyrrrz/discordchatexporter:stable export -t TOKEN -g CHANNELID
+$ docker run -it --rm -v $PWD/data:/out --user $(id -u):$(id -g) tyrrrz/discordchatexporter:stable export -t TOKEN -c CHANNELID
 ```
 
 ## Environment variables
